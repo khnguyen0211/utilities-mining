@@ -6,9 +6,6 @@ e = Item('E', -5)
 f = Item('F', -2)
 g = Item('G', -1)
 
-
-items = [a, b, c, d, e, f, g]
-
 trans1 = Transaction(1, dict(zip([a, b, c, d], [5, 2, 1, 2])))
 trans2 = Transaction(2, dict(zip([a, c, d, g], [1, 1, 1, 3])))
 trans3 = Transaction(3, dict(zip([a, c, f], [1, 1, 1])))
@@ -18,8 +15,8 @@ trans6 = Transaction(6, dict(zip([b, c, d, e], [3, 2, 3, 1])))
 trans7 = Transaction(7, dict(zip([c, e], [6, 4])))
 trans8 = Transaction(8, dict(zip([e, f], [1, 3])))
 
-
-database = [trans1, trans2, trans3, trans4, trans5, trans6]
+items = [a, b, c, d, e, f, g]
+database = [trans1, trans2, trans3, trans4, trans5, trans6, trans7, trans8]
 
 database
 
@@ -48,3 +45,27 @@ trans6 = Transaction(6, dict(zip([b, e], [8, 7])))
 database = [trans1, trans2, trans3, trans4, trans5, trans6]
 
 database
+
+
+
+
+
+PHM: Mining Periodic High-Utility Item sets
+
+a = Item("A", 5)
+b = Item("B", 2)
+c = Item("C", 1)
+d = Item("D", 2)
+e = Item("E", 3)
+
+
+trans1 = Transaction(1, dict(zip([a, c], [1, 1])))
+trans2 = Transaction(2, dict(zip([e], [1])))
+trans3 = Transaction(3, dict(zip([a, b, c, d, e], [1, 5, 1, 3, 1])))
+trans4 = Transaction(4, dict(zip([b, c, d, e], [4, 3, 3, 1])))
+trans5 = Transaction(5, dict(zip([a, c, d], [1, 1, 1])))
+trans6 = Transaction(6, dict(zip([a, c, e], [2, 6, 2])))
+trans7 = Transaction(7, dict(zip([b, c, e], [2, 2, 1])))
+
+items = [a, b, c, d, e]
+database = [trans1, trans2, trans3, trans4, trans5, trans6, trans7]
