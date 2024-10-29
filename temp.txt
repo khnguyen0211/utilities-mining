@@ -69,3 +69,27 @@ trans7 = Transaction(7, dict(zip([b, c, e], [2, 2, 1])))
 
 items = [a, b, c, d, e]
 database = [trans1, trans2, trans3, trans4, trans5, trans6, trans7]
+
+
+
+
+
+
+
+
+
+a = Item("A", -5)
+b = Item("B", 2)
+c = Item("C", 1)
+d = Item("D", 2)
+e = Item("E", 3)
+f = Item("F", 1)
+g = Item("G", 1)
+
+trans1 = Transaction(1, dict(zip([a, c, d], [1, 1, 1])))
+trans2 = Transaction(2, dict(zip([a, c, e, g], [2, 6, 2, 5])))
+trans3 = Transaction(3, dict(zip([a, b, c, d, e, f], [1, 2, 1, 6, 1, 5])))
+trans4 = Transaction(4, dict(zip([b, c, d, e], [4, 3, 3, 1])))
+trans5 = Transaction(5, dict(zip([b, c, e, g], [2, 2, 1, 2])))
+items = [a, b, c, d, e, f, g]
+database = [trans1, trans2, trans3, trans4, trans5]
