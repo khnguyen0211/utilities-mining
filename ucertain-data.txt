@@ -42,8 +42,7 @@ t5 = Transaction(5, t5_trans_items)
 database = [t1, t2, t3, t4, t5]
 
 
-script auto generate 
-
+#script auto generate 
 import random
 
 item_list = [Item(f"i{i+1}", random.randint(-10, 10)) for i in range(10)]
