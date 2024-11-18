@@ -209,3 +209,32 @@ database = [t1, t2, t3, t4, t5]
 
 for trans in database:
     print(trans)
+
+
+a = Item("A", 4)
+b = Item("B", 1)
+c = Item("C", 12)
+d = Item("D", 6)
+e = Item("E", 15)
+
+t1_trans_items = {TransItem(a, 1, 0.2), TransItem(c, 1, 0.3), TransItem(e, 1, 0.2)}
+t2_trans_items = {TransItem(b, 1, 0.2), TransItem(d, 1, 0.3)}
+t3_trans_items = {
+    TransItem(a, 1, 0.1),
+    TransItem(b, 1, 0.2),
+    TransItem(c, 1, 0.1),
+    TransItem(e, 1, 0.3),
+}
+t4_trans_items = {TransItem(c, 1, 0.2)}
+t5_trans_items = {TransItem(b, 1, 0.3), TransItem(d, 1, 0.2), TransItem(e, 1, 0.1)}
+t6_trans_items = {TransItem(a, 1, 0.2), TransItem(c, 1, 0.2), TransItem(d, 1, 0.5)}
+
+t1 = Transaction(1, t1_trans_items)
+t2 = Transaction(2, t2_trans_items)
+t3 = Transaction(3, t3_trans_items)
+t4 = Transaction(4, t4_trans_items)
+t5 = Transaction(5, t5_trans_items)
+t6 = Transaction(6, t6_trans_items)
+
+database = [t1, t2, t3, t4, t5, t6]
+item_list = {a, b, c, d, e}
