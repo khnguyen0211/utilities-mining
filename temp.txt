@@ -78,7 +78,7 @@ database = [trans1, trans2, trans3, trans4, trans5, trans6, trans7]
 
 
 
-a = Item("A", -5)
+a = Item("A", 5)
 b = Item("B", 2)
 c = Item("C", 1)
 d = Item("D", 2)
